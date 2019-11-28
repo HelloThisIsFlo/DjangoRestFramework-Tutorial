@@ -9,6 +9,7 @@ verify_ssl = true
 djangorestframework = "*"
 django = "*"
 autopep8 = "*"
+pygments = "*"
 
 [requires]
 python_version = "3.7"

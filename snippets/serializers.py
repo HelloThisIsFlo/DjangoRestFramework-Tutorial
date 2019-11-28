@@ -11,8 +11,6 @@ class SnippetSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'code', 'linenos', 'language', 'style', 'owner']
 
 class UserSerializer(serializers.ModelSerializer):
-    snippets = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
-
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'snippets']
